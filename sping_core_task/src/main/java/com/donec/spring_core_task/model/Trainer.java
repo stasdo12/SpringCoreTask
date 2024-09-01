@@ -11,7 +11,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @ToString(callSuper = true)
-public class Trainer {
+public class Trainer extends User {
     private long trainerId;
     private TrainingType specialization;
 

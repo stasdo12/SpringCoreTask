@@ -7,10 +7,10 @@ import java.util.Optional;
 
 public interface TraineeDAO {
 
-    Optional<Trainee> create (Trainee trainee);
+    Optional<Trainee> create (long traineeId, Trainee trainee);
     Optional<Trainee> update (Trainee trainee);
-    boolean deleteById(int traineeId);
-    Optional<Trainee> findById(int traineeId);
+    boolean deleteById(long traineeId);
+    Optional<Trainee> findById(long traineeId);
     Optional<Trainee> findByUsername(String username);
     List<Trainee> getAllTrainees();
     List<Trainee> findAllByUsername(String username);
