@@ -14,9 +14,9 @@ import java.time.LocalDate;
 @EqualsAndHashCode(callSuper = false)
 @ToString(callSuper = true)
 public class Training {
-    private int trainingId;
-    private int traineeId;
-    private int trainerId;
+    private long trainingId;
+    private long traineeId;
+    private long trainerId;
     private TrainingType trainingType;
     private LocalDate date;
     private int durationMinutes;

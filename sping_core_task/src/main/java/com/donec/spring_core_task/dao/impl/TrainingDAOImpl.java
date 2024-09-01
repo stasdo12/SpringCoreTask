@@ -1,7 +1,6 @@
 package com.donec.spring_core_task.dao.impl;
 
 import com.donec.spring_core_task.dao.TrainingDAO;
-import com.donec.spring_core_task.model.Trainer;
 import com.donec.spring_core_task.model.Training;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

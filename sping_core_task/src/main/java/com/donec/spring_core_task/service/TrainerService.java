@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Optional;
 
 public interface TrainerService {
-    Optional<Trainer> create (Trainee trainee);
-    Optional<Trainer> update (Trainee trainee);
+    Optional<Trainer> create (Trainer trainer);
+    Optional<Trainer> update (Trainer trainer);
     Optional<Trainer> getById (long trainerId);
     Optional<Trainer> getByUsername(String username);
     List<Trainer> getAllTrainers();
