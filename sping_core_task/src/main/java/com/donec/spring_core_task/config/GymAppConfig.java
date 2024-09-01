@@ -1,4 +1,4 @@
-package com.donec.spring_core_task.congig;
+package com.donec.spring_core_task.config;
 
 
 import org.springframework.context.annotation.ComponentScan;
