@@ -57,4 +57,9 @@ public class TrainerDAOImpl implements TrainerDAO {
                 .filter(trainer -> trainer.getUserName().matches(username + "\\d+"))
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public long getMaxId() {
+        return trainersStorage.keySet().stream().max(Long::compareTo).orElse(0L) + 1;
+    }
 }

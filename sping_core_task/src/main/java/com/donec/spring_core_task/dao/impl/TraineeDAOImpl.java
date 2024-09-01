@@ -62,4 +62,9 @@ public class TraineeDAOImpl implements TraineeDAO {
                 .filter(trainee -> trainee.getUserName().matches(username + "\\d+"))
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public long getMaxId() {
+        return traineesStorage.keySet().stream().max(Long::compareTo).orElse(0L) + 1;
+    }
 }

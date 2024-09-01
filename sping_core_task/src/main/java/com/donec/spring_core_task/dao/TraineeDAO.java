@@ -14,4 +14,5 @@ public interface TraineeDAO {
     Optional<Trainee> findByUsername(String username);
     List<Trainee> getAllTrainees();
     List<Trainee> findAllByUsername(String username);
+    long getMaxId();
 }

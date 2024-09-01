@@ -37,4 +37,9 @@ public class TrainingDAOImpl implements TrainingDAO {
     public List<Training> getAllTrainings() {
         return new ArrayList<>(trainingsStorage.values());
     }
+
+    @Override
+    public long getMaxId() {
+        return trainingsStorage.keySet().stream().max(Long::compareTo).orElse(0L) +1;
+    }
 }
