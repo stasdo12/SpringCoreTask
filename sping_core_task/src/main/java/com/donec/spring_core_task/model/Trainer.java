@@ -13,6 +13,6 @@ import lombok.ToString;
 @ToString(callSuper = true)
 public class Trainer {
     private long trainerId;
-    private String specialization;
+    private TrainingType specialization;
 
 }
