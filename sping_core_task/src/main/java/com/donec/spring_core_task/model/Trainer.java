@@ -6,15 +6,13 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.time.LocalDate;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @ToString(callSuper = true)
-public class Trainee extends User {
-    private long traineeId;
-    private LocalDate birthday;
-    private String address;
+public class Trainer {
+    private long trainerId;
+    private String specialization;
+
 }

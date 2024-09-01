@@ -13,8 +13,11 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @ToString(callSuper = true)
-public class Trainee extends User {
-    private long traineeId;
-    private LocalDate birthday;
-    private String address;
+public class Training {
+    private int trainingId;
+    private int traineeId;
+    private int trainerId;
+    private TrainingType trainingType;
+    private LocalDate date;
+    private int durationMinutes;
 }
